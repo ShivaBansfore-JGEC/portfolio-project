@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inter, Poppins, Oleo_Script } from "next/font/google";
+import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: '--inter' });
+const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300'], variable: '--poppins' });
+const oleo_scrip = Oleo_Script({ subsets: ["latin"], weight: ['400', '700'], variable: '--oleo_script' });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${inter.variable} ${poppins.variable} ${oleo_scrip.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

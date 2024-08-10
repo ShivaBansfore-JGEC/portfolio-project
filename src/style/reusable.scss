@@ -1,0 +1,55 @@
+@use "./function.scss" as *;
+
+
+.button{
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+.button-outline-dark{
+    border: 1px solid #4FC3F7;
+    color: white;
+    background-color: #1A1A1A;
+}
+
+.button-outline-light{
+    border: 2px solid #484E53;
+    color: #484E53;
+    font-weight: 500;
+}
+
+.card{
+    border: 1px solid #2B2B2B;
+    width: toRem(250);
+    padding: toRem(16);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+    font-family: var(--poppins);
+}
+.card-dark{
+    background: -webkit-linear-gradient(#1C1C1C, #050505);
+    .card-title{
+        color: #fff;
+        font-size: 15px;
+    }
+    .card-descriptions{
+        color: #E1E1E1;
+        font-size: 14px;
+    }
+}
+
+.card-light{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    .card-title{
+        color: #484E53;
+        font-weight: 600;
+    }
+    .card-descriptions{
+        color: #1C1E53;
+    }
+}

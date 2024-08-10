@@ -1,0 +1,28 @@
+@use "./function.scss";
+.text-white{
+    color: #ffffff;
+}
+.text-align-center{
+    text-align: center;
+}
+.is-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.gap-8{
+    gap: 8px;
+}
+.gap-16{
+    gap: 16px;
+}
+.mg-top-50{
+    margin-top: 50px;
+}
+.mg-top-24{
+    margin-top: 24px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}

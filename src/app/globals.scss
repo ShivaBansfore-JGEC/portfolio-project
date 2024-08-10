@@ -1,0 +1,19 @@
+@use "../style/App.scss";
+@use "../style/utility.scss";
+@use "../style/reusable.scss";
+@use "../style/function.scss";
+@use "../style/common.scss";
+html{
+    body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+}
+
+.poppins{
+    font-family: var(--poppins);
+}
+.oleo-scripts{
+    font-family: var(--oleo_script);
+}

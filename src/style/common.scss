@@ -1,0 +1,52 @@
+
+@mixin page-title($color: #ffffff){
+    font-size: 45px;
+    color: $color;
+    font-family: var(--poppins);
+}
+
+@mixin page-sub-title($fromColor: #4FC3F7, $toColor: #ffffff){
+    font-size: 14px;
+    font-family: var(--inter);
+    background: -webkit-linear-gradient($fromColor, $toColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-title-dark{
+    @include page-title(#ffffff)
+}
+.page-title-light{
+    @include page-title(#484E53)
+}
+
+.page-sub-title-dark{
+    @include page-sub-title(#4FC3F7, #ffffff);
+}
+.page-sub-title-light{
+    @include page-sub-title(#4FC3F7, #484E53);
+}
+
+.bg-light{
+    background-color: #E0E8F6;
+}
+.bg-dark{
+    background-color: #1A1A1A;
+}
+.menu-text-light{
+    color: #050505;
+}
+.menu-text-dark{
+    color: #C1C1C1;
+}
+
+.text-black{
+    color: #000000;
+}
+
+.desc-light{
+    color: #1C1E53;
+}
+.desc-dark{
+    color: #E1E1E1;
+}
