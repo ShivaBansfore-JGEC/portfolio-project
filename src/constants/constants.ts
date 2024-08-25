@@ -1,3 +1,11 @@
+import react_icon from "../../assets/react_js.svg";
+import javascript_icon from "../../assets/javascript.svg";
+import css_icon from "../../assets/css.svg";
+import node_icon from "../../assets/node.png";
+import html_icon from "../../assets/html.svg"
+import express_icon from "../../assets/express.svg";
+import next_icon from "../../assets/nextjs.svg";
+import typescript_icon from "../../assets/typescript.svg";
 
 export const PAGES = [
     {
@@ -5,20 +13,24 @@ export const PAGES = [
         label: 'Home'
     },
     {
-        id: 1,
+        id: 2,
         label: 'About'
     },
     {
-        id: 1,
+        id: 3,
+        label: 'Skills'
+    },
+    {
+        id: 4,
+        label: 'Experience'
+    },
+    {
+        id: 5,
         label: 'Projects'
     },
     {
-        id: 1,
-        label: 'Services'
-    },
-    {
-        id: 1,
-        label: 'Resume'
+        id: 6,
+        label: 'Contact'
     },
 ]
 
@@ -35,7 +47,7 @@ export const PAGE_STRINGS = {
     }
 }
 
-export const SERVICES_CARDS = [
+export const PROJECT_CARDS = [
     {
         icon: '',
         title: 'Webapp Development',
@@ -57,4 +69,64 @@ export const SERVICES_CARDS = [
         descriptions: `I use modern JavaScript frameworks to build dynamic, interactive web applications, from single-page apps to complex UIs.`
     },
 
+]
+
+export const EXPERIENCE_DETAILS = [
+    {
+        companyDetails: {
+            companyName: 'inFeedo',
+            desc: ''
+        },
+        roleDescriptions: {
+            role: 'Frontend Engineer',
+            descriptions: ['I have worked on dashboard', 'It was realy great learning']
+        },
+        duration: 'Jan 2022 - Present'
+    },
+    {
+        companyDetails: {
+            companyName: 'inFeedo',
+            desc: ''
+        },
+        roleDescriptions: {
+            role: 'Frontend Engineer Intern',
+            descriptions: ['I have worked on dashboard', 'It was realy great learning']
+        },
+        duration: 'Oct 2021 - Dec 2021'
+    },
+]
+
+export const SKILLS = [
+    {
+        label: 'HTML',
+        icon: html_icon
+    },
+    {
+        Label: 'Css',
+        icon: css_icon
+    },
+    {
+        Label: 'Javascript',
+        icon: javascript_icon
+    },
+    {
+        Label: 'Typescript',
+        icon: typescript_icon
+    },
+    {
+        Label: 'React js',
+        icon: react_icon
+    },
+    {
+        Label: 'Next js',
+        icon: next_icon
+    },
+    {
+        Label: 'Node js',
+        icon: node_icon
+    },
+    {
+        Label: 'Express',
+        icon: express_icon
+    },
 ]

@@ -3,7 +3,6 @@ import ImageComponent from "./ImageComponent";
 
 
 interface cardProps {
-    icon?: any,
     title: string,
     descriptions: string,
     theme?: 'dark' | 'light',
@@ -12,7 +11,7 @@ interface cardProps {
 }
 
 const Card = (props: cardProps) => {
-    const { icon, title, descriptions, theme, imageProps = { src: '', alt: '' } } = props || {};
+    const { title, descriptions, theme, imageProps = { src: '', alt: '' } } = props || {};
     return (
         <div className={`card card-${theme}`}>
             <ImageComponent {...imageProps} />

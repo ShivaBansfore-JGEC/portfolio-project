@@ -5,6 +5,9 @@
 .text-align-center{
     text-align: center;
 }
+.text-align-right{
+    text-align: right;
+}
 .is-flex{
     display: flex;
 }
@@ -25,4 +28,8 @@
 }
 .cursor-pointer{
     cursor: pointer;
+}
+.text-green-bold{
+    color: #197a13;
+    font-weight: 500;
 }

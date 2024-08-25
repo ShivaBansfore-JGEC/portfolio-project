@@ -1,19 +1,19 @@
-import { SERVICES_CARDS } from "@/constants/constants";
+import { PROJECT_CARDS } from "@/constants/constants";
 import useConfigurations from "@/hooks/useConfigurations";
 import card_icon_dark from "../../../assets/card_icon_dark.svg";
 import card_icon_light from "../../../assets/card_icon_light.svg";
 import Card from "../reusables/Card";
-const Services = () => {
+const Project = () => {
     const { isDarkTehme, classSuffix } = useConfigurations();
     const cardIcon = isDarkTehme ? card_icon_dark : card_icon_light;
     return (
         <div className="service-section">
             <div>
-                <p className={`page-title-${classSuffix} text-align-center`}>What I do</p>
-                <p className={`page-sub-title-${classSuffix} text-align-center`}>Services</p>
+                <p className={`page-title-${classSuffix} text-align-center`}>Projects</p>
+                <p className={`page-sub-title-${classSuffix} text-align-center`}>Explore projects</p>
             </div>
             <div className="is-flex gap-16">
-                {SERVICES_CARDS.map(card => (
+                {PROJECT_CARDS.map(card => (
                     <Card
                         title={card.title}
                         descriptions={card.descriptions}
@@ -31,4 +31,4 @@ const Services = () => {
     )
 }
 
-export default Services;
+export default Project;

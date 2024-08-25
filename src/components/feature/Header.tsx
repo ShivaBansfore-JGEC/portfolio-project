@@ -22,7 +22,7 @@ export const Header = () => {
                     <li className={isDarkTehme ? 'menu-text-dark' : 'menu-text-light'} key={page.id}>{page.label}</li>
                 ))}
             </ul>
-            <Button type={isDarkTehme ? 'outline-dark' : 'outline-light'} label="Contact Me" />
+            <Button type={isDarkTehme ? 'outline-dark' : 'outline-light'} label="Download Resume" />
             <Image
                 src={isDarkTehme ? dark_theme_icon : light_theme_icon}
                 width={30}

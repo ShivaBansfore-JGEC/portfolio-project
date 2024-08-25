@@ -30,7 +30,8 @@
     font-family: var(--poppins);
 }
 .card-dark{
-    background: -webkit-linear-gradient(#1C1C1C, #050505);
+    background-color: #1C1C1C;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
     .card-title{
         color: #fff;
         font-size: 15px;
@@ -51,5 +52,48 @@
     }
     .card-descriptions{
         color: #1C1E53;
+    }
+}
+
+
+.experiece-card{
+    padding: toRem(16);
+    width: toRem(800);
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    min-height: toRem(180);
+    font-family: var(--poppins);
+    border-radius: 4px;
+}
+.company-name-text{
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--poppins);
+}
+
+.experience-card-dark{
+    background-color: #1C1C1C;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    .experiece-card-heading{
+        color: #fff;;
+        font-size: toRem(16);
+    }
+    .role-description-ul{
+        color: #E1E1E1;
+        margin-left: -16px;
+        font-size: toRem(14);
+    }
+}
+.work-duration{
+    color: #6c737d;
+}
+
+.experience-card-light{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .experience-card-heading{
+        color: #484E53;
+        font-size: toRem(16);
     }
 }
